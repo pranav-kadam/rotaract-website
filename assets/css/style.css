@@ -267,7 +267,6 @@ body {
   font-size: 3.8rem;
 }
 
-
 .navbar {
   position: fixed;
   background-color: var(--eerie-black-1);
@@ -289,6 +288,15 @@ body {
   transition: 0.5s var(--cubic-out);
 }
 
+.nav-close-btn {
+  color: var(--white);
+  font-size: 2.4rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.nav-close-btn ion-icon { --ionicon-stroke-width: 60px; }
 .navbar > .logo {
   font-size: 4rem;
   width: max-content;
