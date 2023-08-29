@@ -1,0 +1,63 @@
+.members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 300px); /* Subtract margin-top from viewport height */
+}
+
+.cu {
+  background: #fff;
+  width: 1000px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  margin: 10px auto 50px; /* Adjusted margin for better spacing */
+  margin-top: 200px;
+}
+
+  
+  .team-mem {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+  }
+  
+  .team-mem label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .bordered-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .bordered-input:focus {
+    border-color: #007bff;
+  }
+  
+  textarea.bordered-input {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

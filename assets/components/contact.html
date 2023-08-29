@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotaract Club Of WCE Sangli</title>
+    <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('_0_NRPN6J0icUQiin');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_vr2m58l', 'template_i5ljwwl', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <a href="../../index.html" class="logo">
+              <!-- Place your logo image here -->
+              <img src="../images/logo.png" alt="Rotaract Club Logo" class="logo-image">
+          </a>
+          <h1><span class="club-name">Rotaract Club of WCE Sangli</span></h1>
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <nav class="navbar" data-navbar>
+            <a href="#" class="logo">Rotaract</a>
+            <ul class="navbar-list">
+              <li>
+                <a href="../components/events.html" class="navbar-link" data-nav-link>
+                  <span>Events</span>
+                   </a>
+              </li>
+              <li>
+                <a href="../components/team.html" class="navbar-link" data-nav-link>
+                  <span>Team</span>
+                     </a>
+              </li>
+              <li>
+                <a href="../components/gallery.html" class="navbar-link" data-nav-link>
+                  <span>Gallery</span>
+                      </a>
+              </li>
+              <li>
+                <a href="../components/contact.html" class="navbar-link" data-nav-link>
+                  <span>Contact Us</span>
+                    </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="cu">
+        <h1>Have Questions? Contact Us</h1>
+        <hr>
+        </div>
+            <div class="members">
+                <div class="team-mem">
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <label>Name</label>
+                        <input type="text" name="user_name" class="bordered-input">
+                        <label>Email</label>
+                        <input type="email" name="user_email" class="bordered-input">
+                        <label>Message</label>
+                        <textarea name="message" class="bordered-input"></textarea>
+                        <input type="submit" value="Send" class="submit-button">
+                    </form>
+                </div>
+          
+            
+          </div> 
+          <footer class="footer" style="text-align: center;">
+            <div class="container">
+              <ul class="footer-list" style="list-style-type: none; padding: 0; display: flex; justify-content: center; align-items: center;">
+                <li>
+                  <a href="./assets/components/contact.html" class="footer-link">Contact Us</a>
+                </li>
+                <li style="display: flex; align-items: center;">
+                  <a href="https://www.instagram.com/wcerotaract/" target="_blank" class="footer-link" style="display: flex; align-items: center;">
+                    <ion-icon name="logo-instagram" style="margin-right: 5px;"></ion-icon> Instagram
+                  </a>
+                </li>
+                <li style="display: flex; align-items: center;">
+                  <a href="https://www.linkedin.com/company/rotaract-club-of-wce-sangli/" target="_blank" class="footer-link" style="display: flex; align-items: center;">
+                    <ion-icon name="logo-linkedin" style="margin-right: 5px;"></ion-icon> LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        
+          <script src="../js/script.js"></script>
+          <!-- 
+            - ionicon link
+          -->
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+            </body>
+        </html>
+        

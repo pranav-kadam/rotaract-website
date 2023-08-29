@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+ 
+body{
+    position: relative;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( black 20%, white 100%);
+}
+.otc {
+  background: #fff;
+  width: 1000px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+
+  margin: 200px auto 50px; /* Using 'auto' for horizontal centering */
+}
+body {
+  background-color: #324968;
+}
+.sewrapper {
+  background: #fff;
+  width: 1250px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  margin-top: 50px; /* Add this line */
+  margin-bottom: 50px;
+}
+h2{
+  text-align: center;
+}
+hr{
+  width: 100px;
+  margin: 10px auto;
+}
+.members{
+  display: flex;
+}
+.team-mem{
+  margin: 8px;
+}
+.team-mem img {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 0 auto; /* This will center the image horizontally */
+}
+
+h4,p{
+  text-align: center;
+  font-size: 15px;
+  margin: 7px;
+}
